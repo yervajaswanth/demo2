@@ -11,4 +11,4 @@ jobs:
       - name: localfiles
         run: ls -la 
       - name: checking version 
-        run: aws -- version
+        run: aws --version
