@@ -15,7 +15,7 @@ jobs:
       - name: uploading in lambda
         run: aws lambda update-function-code --function-name  demo --zip-file fileb://python.zip
         env:
-          AWS_ACCESS_KEY: ${{secrets.ACCESS_KEY}}
-          AWS_SECRET_KEY: ${{secrets.SECRET_KEY}}
+          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
           AWS_DEFAULT_REGION: "ap-south-1"
           
